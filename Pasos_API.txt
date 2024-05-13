@@ -1,0 +1,30 @@
+Instalar sdk de .NET
+
+CMD -> dotnet new webapi -o "NOMBRE"
+
+cd NOMBRE -> 	dotnet add package Microsoft.EntityFrameworkCore
+		dotnet add package Microsoft.EntityFrameworkCore.Tools
+		dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+
+dotnet tool install --global dotnet-ef
+
+hacer modelos (tablas)
+
+appSetting añadir cadena de conexion (DataContext)
+
+hacer conexion en el Program
+
+hacer migracion (dotnet-ef migrations add Migracion_0)
+
+actualizar ddbb (dotnet-ef database update)
+
+hacer interfaces de servicios -> servicios -> controladores
+
+Hacer capas transcient en el program
+
+ir a app services en azure
+
+
+
+
+
