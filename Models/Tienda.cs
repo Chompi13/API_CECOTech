@@ -5,7 +5,7 @@ namespace API.Models{
         public string nombre {get;set;}
         public string rangoMinimo {get;set;}
         public string tamano {get;set;}
-        public Carcel carcel {get;set;}
+        public int carcelID {get;set;}
 
     }
 }

@@ -4,7 +4,7 @@ namespace API.Models{
         public int id {get;set;}
         public string nombre {get;set;}
         public double ahorros {get;set;}
-        public Modulo modulo {get;set;}
+        public int? moduloID {get;set;}
         public string comportamiento {get;set;}
 
     }

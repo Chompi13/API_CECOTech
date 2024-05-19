@@ -5,6 +5,6 @@ namespace API.Models{
         public int capacidad {get;set;}
         public string actividades {get;set;}
         public double pago {get;set;}
-        public Carcel carcel {get;set;}
+        public int carcelID {get;set;}
     }
 }

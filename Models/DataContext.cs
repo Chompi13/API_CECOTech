@@ -13,6 +13,8 @@ namespace API.Models{
         public DbSet<Producto> producto {get;set;} 
         public DbSet<Sancion> sancion {get;set;} 
         public DbSet<Login> login {get;set;} 
+        public DbSet<RegistroTienda> registroTienda {get;set;} 
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

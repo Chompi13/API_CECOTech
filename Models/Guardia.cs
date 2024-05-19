@@ -5,6 +5,6 @@ namespace API.Models{
         public int experiencia {get;set;}
         public int nplaca {get;set;}
         public bool sancionador {get;set;}
-        public Carcel carcel {get;set;}
+        public int carcelID {get;set;}
     }
 }

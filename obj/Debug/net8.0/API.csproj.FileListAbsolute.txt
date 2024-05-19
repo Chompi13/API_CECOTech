@@ -135,3 +135,4 @@ G:\Escritorio\API\obj\Debug\net8.0\refint\API.dll
 G:\Escritorio\API\obj\Debug\net8.0\API.pdb
 G:\Escritorio\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 G:\Escritorio\API\obj\Debug\net8.0\ref\API.dll
+G:\Escritorio\API\obj\Debug\net8.0\API.sourcelink.json

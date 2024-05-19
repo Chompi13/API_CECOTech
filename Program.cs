@@ -21,6 +21,8 @@ builder.Services.AddTransient<IGuardiaService,GuardiaService>();
 builder.Services.AddTransient<TiendaService,TiendaService>();
 builder.Services.AddTransient<IProductoService,ProductoService>();
 builder.Services.AddTransient<ILoginService,LoginService>();
+builder.Services.AddTransient<IRegistroTiendaService,RegistroTiendaService>();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
