@@ -146,7 +146,7 @@ namespace API.Migrations
                     b.Property<double>("ahorros")
                         .HasColumnType("float");
 
-                    b.Property<int>("carcelID")
+                    b.Property<int?>("carcelID")
                         .HasColumnType("int");
 
                     b.Property<string>("comportamiento")

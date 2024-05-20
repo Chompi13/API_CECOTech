@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240520190033_Migracion_1.2")]
+    [Migration("20240520075935_Migracion_1.2")]
     partial class Migracion_12
     {
         /// <inheritdoc />
@@ -149,7 +149,7 @@ namespace API.Migrations
                     b.Property<double>("ahorros")
                         .HasColumnType("float");
 
-                    b.Property<int>("carcelID")
+                    b.Property<int?>("carcelID")
                         .HasColumnType("int");
 
                     b.Property<string>("comportamiento")

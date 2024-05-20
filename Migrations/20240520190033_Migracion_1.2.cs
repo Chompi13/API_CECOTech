@@ -14,8 +14,7 @@ namespace API.Migrations
                 name: "carcelID",
                 table: "preso",
                 type: "int",
-                nullable: false,
-                defaultValue: 0);
+                nullable: true);
         }
 
         /// <inheritdoc />
