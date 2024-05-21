@@ -35,6 +35,19 @@ namespace API.Services{
             return await context.login.FirstOrDefaultAsync(c => c.id == id);
         }
 
+        public async Task<int> Login(string user, string pwd)
+        {
+            var u = await context.login.FirstOrDefaultAsync(c => c.nombre == user);
+            if (u==null){
+                return -1;
+            }
+            u = await context.login.FirstOrDefaultAsync(c => c.nombre == user && c.password == pwd);
+            if (u==null){
+                return -2;
+            }
+            return u.id;
+        }
+
         public async Task<Login> UpdateLogin(Login login)
         {
             context.login.Update(login);

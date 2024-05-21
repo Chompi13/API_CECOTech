@@ -31,6 +31,19 @@ public class LoginController : ControllerBase
         }
         return NotFound("No se ha encontrado el usuario");
     }
+
+    [HttpGet("login")]
+    public async Task<ActionResult<Login>> Get(string user, string pwd) {
+        var login = await _service.Login(user,pwd);
+        if(login==-1){
+            return NotFound("No se ha encontrado el usuario");
+        }else if(login==-2){
+            return NotFound("La contraseña es incorrecta");
+        }else{
+            return await _service.GetLogin(login);
+        }
+    }
+
     [HttpDelete("{id}")]
     public async Task<ActionResult<Login>> Delete(int id) {
         var login = await _service.DeleteLogin(id);
