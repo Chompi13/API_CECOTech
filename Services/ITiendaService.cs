@@ -3,7 +3,7 @@ using API.Models;
 namespace API.Services{
     public interface ITiendaService{
 
-         List<List<Tienda>> GetAll();
+         Task<List<Tienda>> GetAll();
          Task<Tienda> GetTienda(int id);
          Task<Tienda> CreateTienda(Tienda tienda);
          Task<Tienda> UpdateTienda(Tienda tienda);
