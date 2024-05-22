@@ -18,7 +18,7 @@ builder.Services.AddTransient<IModuloService,ModuloService>();
 builder.Services.AddTransient<ISancionService,SancionService>();
 builder.Services.AddTransient<IPresoService,PresoService>();
 builder.Services.AddTransient<IGuardiaService,GuardiaService>();
-builder.Services.AddTransient<TiendaService,TiendaService>();
+builder.Services.AddTransient<ITiendaService,TiendaService>();
 builder.Services.AddTransient<IProductoService,ProductoService>();
 builder.Services.AddTransient<ILoginService,LoginService>();
 builder.Services.AddTransient<IRegistroTiendaService,RegistroTiendaService>();
