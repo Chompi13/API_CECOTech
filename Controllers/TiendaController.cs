@@ -16,7 +16,7 @@ public class TiendaController : ControllerBase
 
     [HttpGet]
     public async ActionResult<List<Tienda>> GetTodos() {
-        var tienda = _service.GetAll();
+        var tienda = await _service.GetAll();
         if(tienda.Any()){
             return tienda;
         }
