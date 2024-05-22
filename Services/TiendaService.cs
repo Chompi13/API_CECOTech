@@ -25,7 +25,7 @@ namespace API.Services{
             return tienda;
         }
 
-        public async List<Tienda> GetAll()
+        public async List<List<Tienda>> GetAll()
         {
             return await context.tienda.ToListAsync();
         }
